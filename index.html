@@ -29,8 +29,8 @@
     </div>
     <div class="content" id="startseite">
         <h1>Hallo, Vielen Dank, dass du mich und meine Katzen mit deiner Anwesenheit beehrst🐾</h1>
-        <b>Entdecke die und probiere die <a href="#" id="rezepteLink">zauberhaften Buchtipps</a> und probiere die
-            <a href="#" id="rezepteLink">katztastischen Rezepte</a> nach zu backen.
+        <b>Entdecke die und probiere die <a href="BesteBuchempfehlungen.html" class="Bücher">zauberhaften Buchtipps</a> und probiere die
+            <a href="" class="Rezept" onclick="showRezepteSection()">katztastischen Rezepte</a> nach zu backen.
         </b>
         <p>Treten Sie ein in die faszinierende Welt von FelineMiracle – einem Ort, an dem sich die Magie von Büchern und die Anmut unserer frei herumstreifenden Katzen vereinen, und eine einzigartige Atmosphäre schaffen. Genießen Sie erstklassigen Tee und lassen Sie sich von der ruhigen, inspirierenden Umgebung verzaubern. Hier öffnen sich Türen zu einem Ort, an dem das Mystische zum Alltag wird, und jedes Buch ist eine Reise in unbekannte Welten bedeutet. Erleben Sie die unerwarteten Wunder, die in jedem Winkel lauern, und lassen Sie sich von der Faszination von FelineMiracle mitreißen. Willkommen im Herzen einer Welt voller Magie und Anmut!</p>
         <br>
@@ -67,20 +67,34 @@
         <img src="Bilder/TresenimFelineMiracle.jpg" width="1200" height="900">
     </section>
     <script>
-        function showRezepteSection(event) {
-            event.preventDefault();
-            document.getElementById('startseite').style.display = 'none';
-            document.getElementById('rezepteSection').style.display = 'block';
+        function showStartseite() {
+           var RezeptSeite = document.querySelector('.Rezepte')
+            Rezepte.style.display = 'none';
+            var startseite= document.querySelector('.startseite')
+            startseite.style.display = 'flex';
         }
 
-        function showStartseite(event) {
-            event.preventDefault();
-            document.getElementById('rezepteSection').style.display = 'none';
-            document.getElementById('startseite').style.display = 'block';
+        function showRezepteSection() {
+           var startseite= document.querySelector('.startseite')
+            startseite.style.display = 'none';
+            var Rezeptseite= document.querySelector('.Rezepte')
+            Rezepte.style.display = 'flex';
         }
 
-        document.getElementById('rezepteLink').addEventListener('click', showRezepteSection);
-        document.getElementById('homeButton').addEventListener('click', showStartseite);
+     
     </script>
+    <section class="Rezepte">
+      <div class="navi">
+        <nav>
+            
+            <form action="index.html"><button style ="width: 100px; height: 70px;font-size: 30px;" onclick="showStartseite()">Home</button></form>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Katztastische Rezepte</h1>
+    <b><p>In unserer magischen Backstube verschwimmen die Grenzen zwischen Traum und Realität, und jedes süße Meisterwerk ist eine Liebeserklärung an die Kunst des Backens. Willkommen in einer Welt, in der unsere Cupcakes nicht nur Naschereien sind, sondern Geschichten erzählen und Emotionen wecken. Schließe die Augen, kosten einen Bissen und lass dich von der Magie unserer himmlischen Kreationen entführen – denn in jedem Cupcake steckt ein Stückchen verzaubertes Glück.</p></b>
+    </div>
+    <img src="Bilder/TresenimFelineMiracle.jpg" width="1200" height="900" >
+    </section>
 </body>
 </html>
