@@ -66,22 +66,21 @@
         </div>
         <img src="Bilder/TresenimFelineMiracle.jpg" width="1200" height="900">
     </section>
-   <script>
-   document.getElementById('rezepteLink').addEventListener('click', function(event) {
+    <script>
+        function showRezepteSection(event) {
             event.preventDefault();
             document.getElementById('startseite').style.display = 'none';
             document.getElementById('rezepteSection').style.display = 'block';
-        });
+        }
 
-        document.getElementById('homeButton').addEventListener('click', function(event) {
+        function showStartseite(event) {
             event.preventDefault();
             document.getElementById('rezepteSection').style.display = 'none';
             document.getElementById('startseite').style.display = 'block';
-        });
-         var Message1 ="Du bist dümmer als ich dachte"
-  var Message2 = "Alle Cookies 🍪 akzeptieren"
-  alert(Message1)
-  alert (Message2)
-   </script>
+        }
+
+        document.getElementById('rezepteLink').addEventListener('click', showRezepteSection);
+        document.getElementById('homeButton').addEventListener('click', showStartseite);
+    </script>
 </body>
 </html>
