@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <section>
-<body>
+<body class="Home">
 <div class="navi">
 <nav>
 <a href="Infos.html">
@@ -24,7 +24,7 @@
 <form action="https://Atlantica1.github.io">
 <button type="submit">Atlantische Hotelwerbung</button>
 </form>
-<form action="Impressum.html">
+<form action="Impressum.html" onclick="function neueUnterSeite1()">
 <button type="submit"> Impressum</button>
 </form>
 
@@ -73,10 +73,15 @@ var Message2 = "Alle Cookies 🍪 akzeptieren"
 alert(Message1)
 alert (Message2)
 
+function neueUnterSeite1(){
+var Unterseite1=document.queryselector('.UnterSeite1');
+Unterseite1.style="flex"
+var HomeSeite=documnet.queryselector('.Home');
+HomeSeite.style="none"
+}
 </script>
 </body>
-</section>
-<section>
+<section class="UnterSeite1">
 HalliHallo 💋
 </section>
 
