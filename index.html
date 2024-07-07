@@ -27,7 +27,9 @@
 <form action="Impressum.html">
 <button type="submit" > Impressum</button>
 </form>
-
+<form action="index.html">
+    <button type="submit">Home</button>
+</form>
 </nav>
 </div>
 <div class="content">
@@ -87,6 +89,14 @@ var Message2 = "Alle Cookies 🍪 akzeptieren"
 alert(Message1)
 alert (Message2)
 
+function zeigeHomeSeite() {
+    var HomeSeite = document.querySelector('.Home')
+    HomeSeite.style="flex"
+    var EmpfehlungSeite = document.querySelector('.BesteBuchempfehlungen')
+    EmpfehlungSeite.style= "none"
+    var RezepteSeite = document.querySelector('.KatztastischeRezepte')
+    RezeptSeite.style="none"
+}
 
 </script>
 
