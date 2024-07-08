@@ -28,17 +28,16 @@
 <button type="submit" > Impressum</button>
 </form>
 <form>
-    <button type="submit" onclick="function zeigeHomeSeite()">Home</button>
+    <button type="submit" >Home</button>
 </form>
 </nav>
 </div>
 <div class="content">
 
-    <section class="Home">
-        <h1>Hallo, Vielen Dank, dass du mich und meine Katzen mit deiner Anwesenheit beehrst🐾</h1>
+    <h1>Hallo, Vielen Dank, dass du mich und meine Katzen mit deiner Anwesenheit beehrst🐾</h1>
     
-    <b> Entdecke die und probiere die <a href="BesteBuchempfehlungen" onclick=" function zeigeEmpfehlungSeite()">zauberhaften Buchtipps</a> und probiere die
-    <a href="KatztastischeRezepte" onclick="function zeigeRezeptSeite()">katztastischen Rezepte</a> nach zu backen.
+    <b> Entdecke die und probiere die <a href="BesteBuchempfehlungen.html">zauberhaften Buchtipps</a> und probiere die
+    <a href="KatztastischeRezepte.html">katztastischen Rezepte</a> nach zu backen.
     </b>
     
     <p>Treten Sie ein in die faszinierende Welt von FelineMiracle – einem Ort, an dem sich die Magie von Büchern und die Anmut unserer frei herumstreifenden Katzen vereinen, und eine einzigartige Atmosphäre schaffen. Genießen Sie erstklassigen Tee und lassen Sie sich von der ruhigen, inspirierenden Umgebung verzaubern. Hier öffnen sich Türen zu einem Ort, an dem das Mystische zum Alltag wird, und jedes Buch ist eine Reise in unbekannte Welten bedeutet. Erleben Sie die unerwarteten Wunder, die in jedem Winkel lauern, und lassen Sie sich von der Faszination von FelineMiracle mitreißen. Willkommen im Herzen einer Welt voller Magie und Anmut!</p>
@@ -69,49 +68,14 @@
     <a href="KatzeNira.html">
     <img src="Bilder/Nira.jpg" width="250" height="250" style="margin-top: 20px; margin-left: 20px;">
     </a>
-    </section>
-    <section class="BesteBuchempfehlungen">
-        <h1>Beste Buchempfehlungen</h1>
-       <b><p>Bücher sind Pforten zu fernen Welten, die unsere Vorstellungskraft entfachen. Auf dieser literarischen Reise begleiten euch unsere bezaubernden Katzen. Die zarten Schnurrgeräusche dieser zauberhaften Begleiter vereinen sich mit den Geschichten, und erschaffen eine einzigartige Magie. Entfliehe dem Alltag, tauche in Bücherwelten ein, umgeben von der Liebe unsere Samtpfoten. Die Seiten werden lebendig, die Zeit steht still – eine Harmonie von Literatur und kuscheligem Gefährten. Lies nicht nur Bücher, erlebe sie, umarmt von der Liebe einer Katze, im Herzen der Fantasie, FelineMiracle.</p></b>
-       <img src="Bilder/MystischesBuch.jpg"width="1300"height="900">
-    </section>
- <section class="KatztastischeRezepte">
-    <h1>Katztastische Rezepte</h1>
-        <b><p>In unserer magischen Backstube verschwimmen die Grenzen zwischen Traum und Realität, und jedes süße Meisterwerk ist eine Liebeserklärung an die Kunst des Backens. Willkommen in einer Welt, in der unsere Cupcakes nicht nur Naschereien sind, sondern Geschichten erzählen und Emotionen wecken. Schließe die Augen, kosten einen Bissen und lass dich von der Magie unserer himmlischen Kreationen entführen – denn in jedem Cupcake steckt ein Stückchen verzaubertes Glück.</p></b>
-        </div>
-        <img src="Bilder/TresenimFelineMiracle.jpg" width="1200" height="900" > 
- </section>
-    
+ 
 </div>
 <script>
 var Message1 ="Du bist dümmer als ich dachte"
 var Message2 = "Alle Cookies 🍪 akzeptieren"
 alert(Message1)
 alert (Message2)
-
-function zeigeHomeSeite() {
-    var HomeSeite = document.querySelector('.Home')
-    HomeSeite.style="display:flex"
-    var EmpfehlungSeite = document.querySelector('.BesteBuchempfehlungen')
-    EmpfehlungSeite.style= "display:none"
-    var RezepteSeite = document.querySelector('.KatztastischeRezepte')
-    RezeptSeite.style="display:none"
-}
-function zeigeEmpfehlungSeite() {
-    var HomeSeite = document.querySelector('.Home')
-    HomeSeite.style="display:none"
-    var EmpfehlungSeite = document.querySelector('.BesteBuchempfehlungen')
-    EmpfehlungSeite.style= "display:flex"
-    var RezepteSeite = document.querySelector('.KatztastischeRezepte')
-    RezeptSeite.style="display:none"  
-}
-function zeigeRezeptSeite() {
-    var HomeSeite = document.querySelector('.Home')
-    HomeSeite.style="display:none"
-    var EmpfehlungSeite = document.querySelector('.BesteBuchempfehlungen')
-    EmpfehlungSeite.style= "display:none"
-    var RezepteSeite = document.querySelector('.KatztastischeRezepte')
-    RezeptSeite.style="display:flex"    
+  
 }
 </script>
 
