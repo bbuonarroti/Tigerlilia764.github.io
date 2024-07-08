@@ -70,12 +70,4 @@ body {
     font-style: normal;
   }
   
-  .Home{
-    display: flex;
-  }
-  .BesteBuchempfehlungen{
-    display:none;
-  }
-  .KatztastischeRezepte{
-    display:none;
-  }
+  
